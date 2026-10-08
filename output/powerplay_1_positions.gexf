@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-10-07">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="node_type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Zone Entry" label="Zone Entry">
+        <viz:position x="0.0" y="-240.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="action" />
+        </attvalues>
+      </node>
+      <node id="Shot" label="Shot">
+        <viz:position x="0.0" y="570.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="action" />
+        </attvalues>
+      </node>
+      <node id="Bumper" label="Bumper">
+        <viz:position x="0.0" y="240.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="position" />
+        </attvalues>
+      </node>
+      <node id="Point" label="Point">
+        <viz:position x="0.0" y="0.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="position" />
+        </attvalues>
+      </node>
+      <node id="Left Flank" label="Left Flank">
+        <viz:position x="-180.0" y="150.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="position" />
+        </attvalues>
+      </node>
+      <node id="Net-Front" label="Net-Front">
+        <viz:position x="0.0" y="360.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="position" />
+        </attvalues>
+      </node>
+      <node id="Right Flank" label="Right Flank">
+        <viz:position x="180.0" y="150.0" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="position" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Zone Entry" target="Point" id="0" label="1" weight="1" />
+      <edge source="Zone Entry" target="Left Flank" id="1" label="3" weight="3" />
+      <edge source="Bumper" target="Point" id="2" label="2" weight="2" />
+      <edge source="Point" target="Left Flank" id="3" label="3" weight="3" />
+      <edge source="Point" target="Shot" id="4" label="2" weight="2" />
+      <edge source="Point" target="Bumper" id="5" label="1" weight="1" />
+      <edge source="Point" target="Right Flank" id="6" label="1" weight="1" />
+      <edge source="Left Flank" target="Point" id="7" label="3" weight="3" />
+      <edge source="Left Flank" target="Net-Front" id="8" label="1" weight="1" />
+      <edge source="Left Flank" target="Right Flank" id="9" label="2" weight="2" />
+      <edge source="Left Flank" target="Bumper" id="10" label="1" weight="1" />
+      <edge source="Net-Front" target="Left Flank" id="11" label="2" weight="2" />
+      <edge source="Right Flank" target="Shot" id="12" label="1" weight="1" />
+      <edge source="Right Flank" target="Net-Front" id="13" label="2" weight="2" />
+    </edges>
+  </graph>
+</gexf>
